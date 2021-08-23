@@ -33,7 +33,7 @@ function App() {
   }
 
   return (
-    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? "App warm" : "App") : "App"}>
+    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? "App warm" : "App") : "App initial"}>
       <main>
         <div className="search-box">
           <input type="text" className="search-bar" placeholder="Search..." onChange={e => setQuery(e.target.value)} value={query} onKeyPress={search}></input>
@@ -53,7 +53,16 @@ function App() {
             </div>
           </div>
           </div>
-        ) : ('')}
+        ) : (
+          <div>
+            <div className="initial-box">
+              <div className="initial-text">
+                <h1>Weather App</h1>
+                <p>Type in your city/state</p>
+              </div>
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );
