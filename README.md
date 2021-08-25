@@ -1,5 +1,5 @@
 # weather-app
-**Weather app made using react.**
+**Weather app made using react.** Check it out here: https://jameszhang22.github.io/weather-application/
 ## Information
 - Search your city to get the temperature and weather conditions
 - Dynamic backgrounds based on temperature
